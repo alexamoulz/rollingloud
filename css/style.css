@@ -1,0 +1,373 @@
+.container {
+	width: 100vw; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+}
+
+/* Typography */
+@font-face {
+  font-family: 'compactablkbt_black';
+  src: url("../fonts/compactablkbt_black.ttf");
+}
+/* For Headers/Titles */
+h1 {
+  position: absolute;
+  font-family: 'compactablkbt_black';
+  color: white;
+  font-size: 22px;
+	left: 90%;
+	top: 50%;
+	transform: translate(-50%,-65%);
+}
+
+/* For Subheaders */
+h2 {
+  position: absolute;
+  font-family: 'compactablkbt_black';
+  color: white;
+  font-size: 22px
+	left: 50%;
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 32px;
+}
+h3 {
+  position: relative;
+  top: 30px;
+  left: 0px;
+  text-align: center;
+  font-family: 'compactablkbt_black';
+  color: #1d1d20;
+  font-size: 28px;
+}
+/* For Captions */
+h4 {
+  position: relative;
+  top: -45px;
+  left: 0px;
+  text-align: center;
+  font-family: 'compactablkbt_black';
+  color: #1d1d20;
+  font-size: 28px;
+}
+h5 {
+  position: relative;
+  top: 0px;
+  left: 130px;
+  text-align: center;
+  font-family: 'compactablkbt_black';
+  color: #1d1d20;
+  font-size: 28px;
+  float: left;
+  margin-right: 300px;
+}
+h6 {
+	position: relative;
+  top: 50px;
+  left: 130px;
+  text-align: center;
+  font-family: 'compactablkbt_black';
+  color: #c36f89;
+  font-size: 28px;
+  float: left;
+  margin-right: 300px;
+}
+h7 {
+	position: relative;
+  top: 70px;
+  left: 130px;
+  text-align: left;
+  font-family: 'compactablkbt_black';
+  color: #c36f89;
+  font-size: 20px;
+  float: left;
+  margin-right: 300px;
+}
+h8 {
+	position: relative;
+	top: 90px;
+	left: 130px;
+	text-align: left;
+	font-family: 'compactablkbt_black';
+	color: #c36f89;
+	font-size: 20px;
+	float: left;
+	margin-right: 300px;
+}
+h9 {
+	position: relative;
+  top: 50px;
+  left: 130px;
+  text-align: center;
+  font-family: 'compactablkbt_black';
+  color: #1d1d20;
+  font-size: 28px;
+  float: left;
+  margin-right: 300px;
+}
+h10 {
+	position: relative;
+  top: 70px;
+  left: 130px;
+  text-align: left;
+  font-family: 'compactablkbt_black';
+  color: #1d1d20;
+  font-size: 20px;
+  float: left;
+  margin-right: 300px;
+}
+h11{
+	position: relative;
+	top: 90px;
+	left: 130px;
+	text-align: left;
+	font-family: 'compactablkbt_black';
+	color: #1d1d20;
+	font-size: 20px;
+	float: left;
+	margin-right: 300px;
+}
+h12 {
+	position: relative;
+  top: 50px;
+  left: 130px;
+  text-align: center;
+  font-family: 'compactablkbt_black';
+  color: #1d1d20;
+  font-size: 28px;
+  float: left;
+  margin-right: 300px;
+}
+h13 {
+	position: relative;
+  top: 70px;
+  left: 130px;
+  text-align: left;
+  font-family: 'compactablkbt_black';
+  color: #1d1d20;
+  font-size: 20px;
+  float: left;
+  margin-right: 300px;
+}
+h14 {
+	position: relative;
+	top: 90px;
+	left: 130px;
+	text-align: left;
+	font-family: 'compactablkbt_black';
+	color: #1d1d20;
+	font-size: 20px;
+	float: left;
+	margin-right: 300px;
+}
+h15 {
+	  position: absolute;
+	  top: 70px;
+	  left: 920px;
+	  font-family: 'compactablkbt_black';
+	  color: #1d1d20;
+	  font-size: 30px;
+}
+h16 {
+	position: absolute;
+	top: 150px;
+	left: 800px;
+	font-family: 'compactablkbt_black';
+	color: #1d1d20;
+	font-size: 28px;
+}
+h17 {
+  position: absolute;
+  font-family: 'compactablkbt_black';
+  color: white;
+  font-size: 22px;
+	left: 1050px;
+	top: 308px;
+}
+h18 {
+  position: absolute;
+  font-family: 'compactablkbt_black';
+  color: white;
+  font-size: 22px;
+	left: 1045px;
+	top: 458px;
+}
+h19 {
+  position: absolute;
+  font-family: 'compactablkbt_black';
+  color: white;
+  font-size: 22px;
+	left: 150px;
+	top: 40px;
+}
+/* Navigation Bar */
+.navigation {
+	width: 100vw;
+	height: 65px;
+	background: #1d1d20;
+	position: fixed; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+	z-index: 1; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+}
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 710px;
+  width: 8vw;
+  height: auto;
+}
+.square2 {
+  position: relative;
+  top: 10px;
+  left: 1328px;
+  width: 110px;
+  height: 40px;
+  background: #c36f89;
+}
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+	margin-top: -20px;
+	margin-left: 20px;
+	margin-right: 20px;
+  position: absolute;
+  font-family: 'compactablkbt_black';
+  color: #c36f89;
+  font-size: 28px;
+}
+
+li {
+	float: left;; /* makes all of our links on the right side of the nav bar */
+	margin-right: 60px; /* gives 20px of spacing between each text link */
+}
+
+a {
+	color: #c36f89;
+	text-decoration: none; /* removes the underline and blue color of our text links */
+}
+
+
+
+
+/* Home Page CSS */
+
+.home { /* this is the hero image area */
+    position: relative;
+    top: -30px;
+    width: 98.95vw;
+    height: auto;
+    z-index: -1;
+  }
+
+
+.one {
+	width: 100vw; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+	height: 530px;
+	background: #5C9A9D;
+	margin: auto; /* makes sure that the section is centered on the page */
+}
+.travis {
+  position: relative;
+  top: -15px;
+  left: 15px;
+  width: 32vw;
+  height: auto;
+}
+.carti {
+  position: relative;
+  top: -15px;
+  left: 17px;
+  width: 32vw;
+  height: auto;
+}
+.future {
+  position: relative;
+  top: -15px;
+  left: 20px;
+  width: 32vw;
+  height: auto;
+}
+
+.two {
+	width: 100vw;
+	height: 80px;
+	background: white;
+	margin: auto;
+}
+
+.three {
+  width: 100vw;
+	height: 500px;
+	background: #1d1d20;
+	margin: auto;
+}
+.GA {
+	width: 400px;
+	height: auto;
+	margin-top: 100px;
+	margin-left: 570px;
+}
+
+.four {
+	width: 100vw;
+	height: 500px;
+	background: #c36f89;
+	margin: auto;
+}
+.GAplus {
+	width: 400px;
+	height: auto;
+	margin-top: 130px;
+	margin-left: 150px;
+}
+.five {
+	width: 100vw;
+	height: 500px;
+	background: #5C9A9D;
+	margin: auto;
+}
+.VIP {
+	width: 400px;
+	height: auto;
+	margin-top: 80px;
+	margin-left: 10px;
+}
+.six {
+	width: 100vw;
+	height: 80px;
+	background: white;
+	margin: auto;
+}
+.seven {
+	width: 100vw;
+	height: 700px;
+	background: #c36f89;
+	margin: auto;
+}
+.map {
+	width: 600px;
+	height: auto;
+	margin-top: 40px;
+	margin-left: 70px;
+}
+.hotels{
+	position: absolute;
+  top: 300px;
+  left: 1000px;
+  width: 200px;
+  height: 40px;
+  background: #1d1d20;
+}
+.parking {
+	position: absolute;
+  top: 450px;
+  left: 1000px;
+  width: 200px;
+  height: 40px;
+  background: #1d1d20;
+}
+.footer {
+	width: 100vw;
+	height: 100px;
+	background: black;
+}
